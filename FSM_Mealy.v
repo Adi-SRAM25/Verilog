@@ -23,7 +23,7 @@ default Snext = A;
 endcase
 end
   
-  always @ (x,Sreg) //output logic - Notice it's also dependent on input
+  always @ (x,Sreg) //output logic - Notice it is also dependent on input
 case(Sreg)
 A: if(x==0) z=0; else z=0;
 B: if(x==0) z=0; else z=0;

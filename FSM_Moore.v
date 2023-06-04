@@ -26,7 +26,7 @@ C: if(en==0) Snext=C;
 else Snext=D;
 D: if(en==0) Snext=D;
 else Snext=A;
-default Snext = A;
+default: Snext = A;
 endcase
 end
   
@@ -34,7 +34,7 @@ always @ (Sreg) // Output logic
 case (Sreg)
 A,B,C: z=0;
 D: z=1;
-default z=0;
+default: z=0;
 endcase
   
 endmodule

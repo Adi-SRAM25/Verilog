@@ -15,5 +15,3 @@ clk_out = (count<divide/2)?1:0;
 end
 
 endmodule
-
-

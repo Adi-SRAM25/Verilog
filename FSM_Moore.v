@@ -18,14 +18,10 @@ Sreg<=Snext;
 always @ (en or Sreg) // Next-state logic
 begin
 case(Sreg)
-A: if(en==0) Snext=A;
-else Snext=B;
-B: if(en==0) Snext=B;
-else Snext=C;
-C: if(en==0) Snext=C;
-else Snext=D;
-D: if(en==0) Snext=D;
-else Snext=A;
+  A: if(en==0) Snext=A; else Snext=B;
+  B: if(en==0) Snext=B; else Snext=C;
+  C: if(en==0) Snext=C; else Snext=D;
+  D: if(en==0) Snext=D; else Snext=A;
 default: Snext = A;
 endcase
 end

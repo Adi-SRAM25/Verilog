@@ -6,7 +6,6 @@ module synchronous_fifo #(parameter DEPTH=8, DATA_WIDTH=8) (
   output full, empty
 );
   
-  
   reg [DEPTH-1:0] w_ptr, r_ptr;
   reg [DATA_WIDTH-1:0] fifo[DEPTH];
   reg [DEPTH-1:0] count;
